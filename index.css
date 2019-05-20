@@ -1,0 +1,13 @@
+html, body { 
+    height: 100%; 
+}
+
+.chart-title {
+    text-align: center;
+    margin: auto auto;
+}
+
+.char-area {
+    text-align: center;
+    margin: auto auto;
+}
