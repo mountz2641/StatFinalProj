@@ -1,33 +1,9 @@
 google.charts.load("current", { packages: ["corechart", "bar"] });
 google.charts.setOnLoadCallback(drawChart);
-url =
-  "https://docs.google.com/spreadsheets/d/1VVqsn59eJWT4wIIINatcV5EBVHHEQzxS9Xm2We9wC9c/gviz/tq?sheet=data1&headers=1&tq=";
-url2 =
-  "https://docs.google.com/spreadsheets/d/1VVqsn59eJWT4wIIINatcV5EBVHHEQzxS9Xm2We9wC9c/gviz/tq?sheet=data2&headers=1&tq=";
-url3 =
-  "https://docs.google.com/spreadsheets/d/1VVqsn59eJWT4wIIINatcV5EBVHHEQzxS9Xm2We9wC9c/gviz/tq?sheet=data3&headers=1&tq=";
 function drawChart() {
   chart1Draw();
   chart2Year59();
   chart3Draw();
-  /*var queryString = encodeURIComponent("select A,B");
-  var query1 = new google.visualization.Query(url + queryString);
-  query1.send(handleChart1Response);
-  */
-  /*queryString = encodeURIComponent(
-    "select A, sum(B), C where C=2559 group by A, C order by sum(B) desc"
-  );
-  var query2 = new google.visualization.Query(url2 + queryString);
-  query2.send(handleChart2Response);*/
-  /*
-  queryString = encodeURIComponent("select A, B, C, D, E");
-  var query3 = new google.visualization.Query(url3 + queryString);
-  query3.send(handleChart3Response);
-  */
-}
-
-function errorAlert(res) {
-  alert("Error in query: " + res.getMessage() + " " + res.getDetailedMessage());
 }
 
 function chart2Year59() {
