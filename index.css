@@ -7,7 +7,12 @@ html, body {
     margin: auto auto;
 }
 
-.char-area {
+.chart-area {
+    display: block;
+    margin: 0 auto;
+}
+
+.chart-box {
     text-align: center;
-    margin: auto auto;
+    margin: 10px auto;
 }

@@ -23,34 +23,70 @@
     <script type="text/javascript" src="./index.js"></script>
   </head>
   <body class="align-items-center">
-    <nav class="navbar navbar-light">
+    <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        Bootstrap
+        กระทรวงวิทยาศาสตร์ และเทคโนโลยี
       </a>
     </nav>
-    <div class="class-box">
+    <div class="chart-box">
       <h3 class="chart-title">
         งบเบิกจ่ายรายเดือนของกระทรวงวิทยาศาสตร์ และเทคโนโลยี
       </h3>
       <div id="chart1" class="col-12 chart-area"></div>
     </div>
 
-    <div class="class-box">
+    <div class="chart-box">
       <h3 class="chart-title">
         งบประมาณรายปีของจำแนกตามกรมในสังกัด
       </h3>
       <div id="chart2" class="col-12 chart-area"></div>
       <div id="yearButton">
-        <b>เลือกปี: </b>
-        <button id="changeTo2559" onclick="chart2Year59()">2559</button>
-        <button id="changeTo2560" onclick="chart2Year60()">2560</button>
-        <button id="changeTo2561" onclick="chart2Year61()">2561</button>
-        <button id="changeTo2562" onclick="chart2Year62()">2562</button>
+        <b>ปี: </b>
+        <button
+          id="changeTo2559"
+          class="btn btn-primary"
+          onclick="chart2Year59()"
+        >
+          2559
+        </button>
+        <button
+          id="changeTo2560"
+          class="btn btn-primary"
+          onclick="chart2Year60()"
+        >
+          2560
+        </button>
+        <button
+          id="changeTo2561"
+          class="btn btn-primary"
+          onclick="chart2Year61()"
+        >
+          2561
+        </button>
+        <button
+          id="changeTo2562"
+          class="btn btn-primary"
+          onclick="chart2Year62()"
+        >
+          2562
+        </button>
       </div>
     </div>
-    <div class="class-box">
-      <h3 class="chart-title"></h3>
+    <div class="chart-box">
+      <h3 class="chart-title">งบประมาณจำแนกตามปีและกรมในสังกัด</h3>
       <div id="chart3" class="col-12 chart-area"></div>
     </div>
   </body>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2019 Copyright:
+      <a>
+        Tharit Horpetrungraung 5910501976</a
+      >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </html>
